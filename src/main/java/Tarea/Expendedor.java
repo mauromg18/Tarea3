@@ -45,7 +45,7 @@ public class Expendedor {
                     + tipo.getPrecio()
                     + " (tu metiste $" + moneda.getValor() + ")");
         }
-        Deposito<Producto> deposito = this.productos.get(tipo.o());
+        Deposito<Producto> deposito = this.productos.get(tipo.ordinal());
         Producto producto = deposito.get();
         if (producto == null) {
             this.monedasVuelto.add(moneda);
@@ -67,7 +67,7 @@ public class Expendedor {
     /** da la cantidad de productos del tipo dicho.
      * @return La cantidad de productos del tipo dicho. */
     public int getProductoCantidad(TipoProductos tipo) {
-        return this.productos.get(tipo.o()).size();
+        return this.productos.get(tipo.ordinal()).size();
     }
     /** regresa una moneda del vuelto
      * @return Una moneda del vuelto. */
