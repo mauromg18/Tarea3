@@ -30,7 +30,7 @@ public enum TipoProductos {
         }
     },
     /** Representa el dulce Super ocho. */
-    SUPER8("Super ocho", 100) {
+    SUPEROCHO("Super ocho", 300) {
         @Override
         public SuperOcho crearProducto(int serie) {
             return new SuperOcho(serie);
